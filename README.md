@@ -1,6 +1,6 @@
 
 
-# 安装&升级
+# 安装
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/main/install.sh)
 ```
@@ -54,18 +54,18 @@ firewall-cmd --zone=public --add-port=5011/tcp --permanent
 –add-port=1935/tcp #添加端口，格式为：端口/通讯协议
 –permanent #永久生效，没有此参数重启后失效
 
-
 # Acme 脚本申请证书
 环境安装
-```apt update -y```          #Debian/Ubuntu 命令
-```apt install -y curl```    #Debian/Ubuntu 命令
-```apt install -y socat```    #Debian/Ubuntu 命令
-```yum update -y ```        #CentOS 命令
-```yum install -y curl```    #CentOS 命令
-```yum install -y socat```    #CentOS 命令 
+#Debian/Ubuntu 命令
+```apt update -y```          
+```apt install -y curl```   
+```apt install -y socat```  
+#CentOS 命令
+```yum update -y ```        
+```yum install -y curl```    
+```yum install -y socat```    
 
 安装Acme 脚本 ```curl https://get.acme.sh | sh```
-
 
 
 ```
