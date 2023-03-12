@@ -57,7 +57,7 @@ firewall-cmd --zone=public --add-port=5011/tcp --permanent
 
 ################################################################################################
 
-# Debian/Ubuntu 命令
+#Debian/Ubuntu 命令
 ```
 apt update -y          
 ```
@@ -73,7 +73,10 @@ bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/blob/main/install.sh)
 ```
 
-完成 X-ui 安装以后，我们可以输入 VPSIP:端口（如1.1.1.1:12345） 登录 X-ui 的管理面板（可以登录代表安装成功） 登入不成功的话，关闭防火墙试试。
+#######################################
+完成 X-ui 安装以后，我们可以输入 VPSIP:端口（如1.1.1.1:12345） 登录 X-ui 的管理面板（可以登录代表安装成功） 
+# 登入不成功的话，关闭防火墙试试。
+########################################
 
 在 VPS 输入 x-ui 命令，进入 X-ui 的命令菜单
 
