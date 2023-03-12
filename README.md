@@ -75,7 +75,11 @@ TLS的服务器地址要是完整的域名
 ```
 apt update -y
 ```
+  
+```
 apt install -y curl
+```
+   
 ```
 apt install -y socat
 ```
@@ -85,7 +89,11 @@ apt install -y socat
 ```
 yum update -y
 ```
+  
+```
 yum install -y curl
+```
+   
 ```
 yum install -y socat
 ```
