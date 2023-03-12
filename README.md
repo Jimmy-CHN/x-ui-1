@@ -17,7 +17,7 @@
 # 安装&升级
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/XDBeyond/x-ui-1/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/master/install.sh)
 ```
 
 ## 手动安装&升级
@@ -191,7 +191,7 @@ apt install -y curl socat    #Debian/Ubuntu 命令
 
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh) #X-ui面板安装
 
-bash <(curl -Ls https://raw.githubusercontent.com/XDBeyond/x-ui-1/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/master/install.sh)
 
 完成 X-ui 安装以后，我们可以输入 VPSIP:端口（如1.1.1.1:12345） 登录 X-ui 的管理面板（可以登录代表安装成功）
 
