@@ -1,10 +1,4 @@
-
-
-# 安装
-```
-bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/main/install.sh)
-```
-
+# -------------------------------------------------------------------------------
 #ContOS Yum安装wget
 ```
 yum -y install wget     
@@ -54,38 +48,9 @@ firewall-cmd --zone=public --add-port=5011/tcp --permanent
 –add-port=1935/tcp #添加端口，格式为：端口/通讯协议
 –permanent #永久生效，没有此参数重启后失效
 
-# Acme 脚本申请证书
-
-环境安装
-#Debian/Ubuntu 命令
+# 安装
 ```
-apt update -y
-```          
-```
-apt install -y curl
-```   
-```
-apt install -y socat
-```  
-#CentOS 命令
-```
-yum update -y
-```        
-```
-yum install -y curl
-```    
-```
-yum install -y socat
-```    
-
-安装Acme 脚本 ```curl https://get.acme.sh | sh```
-
-###############################################################
-```
-bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh) 
-```
-```
-bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/blob/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/main/install.sh)
 ```
 
 完成 X-ui 安装以后，我们可以输入 VPSIP:端口（如1.1.1.1:12345） 登录 X-ui 的管理面板（可以登录代表安装成功） 登入不成功的话，关闭防火墙试试。
@@ -101,3 +66,36 @@ vless   端口一定要443   传输协议 ws   路径随便  tls打开  域名�
 请求头需要修改 前面添加 host|xxxx
 
 TLS的服务器地址要是完整的域名
+
+----------------------------------------------------------------------------------------------------------
+# Acme 脚本申请证书
+环境安装
+
+#Debian/Ubuntu 命令
+
+```
+apt update -y
+```          
+```
+apt install -y curl
+```   
+```
+apt install -y socat
+```  
+
+#CentOS 命令
+```
+yum update -y
+```        
+```
+yum install -y curl
+```    
+```
+yum install -y socat
+```    
+
+安装Acme 脚本
+```
+curl https://get.acme.sh | sh
+```
+----------------------------------------------------------------------------------------------------------
