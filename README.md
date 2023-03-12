@@ -1,60 +1,77 @@
 
 
 # 安装&升级
-
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/main/install.sh)
 ```
+
+#ContOS Yum安装wget
 ```
-yum -y install wget     ##ContOS Yum安装wget
+yum -y install wget     
 ```
 
+#Debian Ubuntu安装 wget
+```
+apt-get install wget   
+```
 
-apt-get install wget   ##Debian Ubuntu安装 wget
+#Ubuntu/Debian 系统安装 Curl 方法
+```
+apt-get update -y && apt-get install curl -y    
+```
 
-apt-get update -y && apt-get install curl -y    ##Ubuntu/Debian 系统安装 Curl 方法
+#Centos 系统安装 Curl 方法
+```
+yum update -y && yum install curl -y            
+```
 
-yum update -y && yum install curl -y            ##Centos 系统安装 Curl 方法
+#使用netstat命令可以快速的查看哪些端口被占用了，包含了TCP端口和UDP端口。
+```
+netstat -antup   
+```
 
-
-netstat -antup   #使用netstat命令可以快速的查看哪些端口被占用了，包含了TCP端口和UDP端口。
-
-
-启动防火墙命令：
+#启动防火墙命令：
+```
 systemctl start firewalld
+```
 
-关闭防火墙命令：
+#关闭防火墙命令：
+```
 systemctl stop firewalld
+```
 
+#重启防火墙命令：
+```
+firewall-cmd --reload
+```
 
-
-2、开放指定端口
-
-开放端口命令：
+#开放端口命令：
+```
 firewall-cmd --zone=public --add-port=5011/tcp --permanent
-
+```
 命令含义：
 –zone #作用域
-
 –add-port=1935/tcp #添加端口，格式为：端口/通讯协议
-
 –permanent #永久生效，没有此参数重启后失效
 
 
-3、重启防火墙
-
-重启防火墙命令：
-firewall-cmd --reload
-
 ################################################################################################
 
-apt update -y          # Debian/Ubuntu 命令
+# Debian/Ubuntu 命令
+```
+apt update -y          
+```
+#Debian/Ubuntu 命令
+```
+apt install -y curl socat    
+```
 
-apt install -y curl socat    #Debian/Ubuntu 命令
-
+```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh) 
-
+```
+```
 bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/blob/main/install.sh)
+```
 
 完成 X-ui 安装以后，我们可以输入 VPSIP:端口（如1.1.1.1:12345） 登录 X-ui 的管理面板（可以登录代表安装成功） 登入不成功的话，关闭防火墙试试。
 
