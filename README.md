@@ -1,4 +1,4 @@
-# -------------------------------------------------------------------------------
+# -------------------------------------------------------------
 #ContOS Yum安装wget
 ```
 yum -y install wget     
@@ -71,7 +71,7 @@ TLS的服务器地址要是完整的域名
 # Acme 脚本申请证书
 环境安装
 
-#Debian/Ubuntu 命令
+Debian/Ubuntu 命令
 
 ```
 apt update -y
@@ -83,7 +83,8 @@ apt install -y curl
 apt install -y socat
 ```  
 
-#CentOS 命令
+CentOS 命令
+
 ```
 yum update -y
 ```        
