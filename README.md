@@ -5,8 +5,10 @@
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/main/install.sh)
 ```
+```
+yum -y install wget     ##ContOS Yum安装wget
+```
 
-yum -y install wget    ##ContOS Yum安装wget
 
 apt-get install wget   ##Debian Ubuntu安装 wget
 
