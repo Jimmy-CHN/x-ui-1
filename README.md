@@ -53,7 +53,7 @@ firewall-cmd --zone=public --add-port=5011/tcp --permanent
 bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/main/install.sh)
 ```
 
-完成 X-ui 安装以后，我们可以输入 VPSIP:端口（如1.1.1.1:12345） 登录 X-ui 的管理面板（可以登录代表安装成功） 登入不成功的话，关闭防火墙试试。
+完成安装以后，我们可以输入 IP:端口（如1.1.1.1:12345） 登录 X-ui 的管理面板（可以登录代表安装成功）
 
 在 VPS 输入 x-ui 命令，进入 X-ui 的命令菜单
 
@@ -61,7 +61,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/main/install.
 
 申请成功以后，证书和密钥文件在 VPS 目录的 /root/cert 文件夹里面
 
-vless   端口一定要443   传输协议 ws   路径随便  tls打开  域名填解析号的     秘钥复制路径
+vless   端口一定要443   传输协议 ws   路径随便  tls打开  域名填解析号的   秘钥复制路径
 
 请求头需要修改 前面添加 host|xxxx
 
