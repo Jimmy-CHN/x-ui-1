@@ -17,7 +17,7 @@
 # 安装&升级
 
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/blob/main/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Jimmy-CHN/x-ui-1/main/install.sh)
 ```
 
 ## 手动安装&升级
