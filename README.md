@@ -73,31 +73,14 @@ TLS的服务器地址要是完整的域名
 
 #Debian/Ubuntu 命令：
 ```
-apt update -y
-```
-  
-```
-apt install -y curl
-```
-   
-```
-apt install -y socat
+apt update -y && apt install curl -y  && apt install socat -y 
 ```
 
 #CentOS 命令：
-
 ```
-yum update -y
+yum update -y && yum install curl -y && yum install socat -y
 ```
   
-```
-yum install -y curl
-```
-   
-```
-yum install -y socat
-```
-
 #安装Acme 脚本：
 ```
 curl https://get.acme.sh | sh
