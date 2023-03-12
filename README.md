@@ -67,35 +67,31 @@ vless   端口一定要443   传输协议 ws   路径随便  tls打开  域名�
 
 TLS的服务器地址要是完整的域名
 
-----------------------------------------------------------------------------------------------------------
+
 # Acme 脚本申请证书
 环境安装
 
 #Debian/Ubuntu 命令
 
-
+```
 apt update -y
 ```          
-```
 apt install -y curl
 ```   
-```
 apt install -y socat
 ```  
 
 #CentOS 命令
 
 ```
-yum update -y
-```        
+yum update -y       
 ```
-yum install -y curl
-```    
+yum install -y curl   
 ```
 yum install -y socat
 ```    
 
-安装Acme 脚本
+#安装Acme 脚本
 ```
 curl https://get.acme.sh | sh
 ```
