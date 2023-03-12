@@ -55,19 +55,32 @@ firewall-cmd --zone=public --add-port=5011/tcp --permanent
 –permanent #永久生效，没有此参数重启后失效
 
 # Acme 脚本申请证书
+
 环境安装
 #Debian/Ubuntu 命令
-```apt update -y```          
-```apt install -y curl```   
-```apt install -y socat```  
+```
+apt update -y
+```          
+```
+apt install -y curl
+```   
+```
+apt install -y socat
+```  
 #CentOS 命令
-```yum update -y ```        
-```yum install -y curl```    
-```yum install -y socat```    
+```
+yum update -y
+```        
+```
+yum install -y curl
+```    
+```
+yum install -y socat
+```    
 
 安装Acme 脚本 ```curl https://get.acme.sh | sh```
 
-
+###############################################################
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh) 
 ```
